@@ -1,0 +1,156 @@
+html {
+    background-color: yellow;
+}
+
+body {
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+h1 {
+    font-family: "Major Mono Display", sans-serif;
+    font-size: 20rem;
+    line-height: 80%;
+    margin-block-start: 5%;
+}
+
+h2 {
+    font-family: "Major Mono Display", sans-serif;
+    font-size: 8rem;
+    line-height: 80%;
+    max-width: 70%;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+h3 {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+h4 {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 2px solid;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: black;
+}
+
+ul li a:hover {
+    text-transform: uppercase;
+}
+
+footer {
+    margin-top: 3%;
+    padding: 1%;
+}
+
+
+/* classes -------------------------------------------------------------*/
+.hello span {
+  display: inline-block;
+  transition: transform 2s ease;
+}
+
+.hello span:hover {
+  transform: rotateY(360deg);
+  color: white;
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.assignmentBox {
+    display: inline-block;
+    border: 2px solid;
+    position: relative;
+    flex-basis: auto;
+    min-width: 30%;
+    max-width: 30%;
+    margin: .5%;
+    padding: 1%;
+}
+
+/*IDs---------------------------------------------------------*/
+
+#syllabus {
+    border: 2px solid;
+}
+
+#right-menu {
+    float: right;
+}
+
+/*media queries-----------------------------------------------*/
+@media screen and (max-width: 1200px) {
+  .assignmentBox {
+    min-width: 45%;
+    max-width: 45%;
+  }
+
+  h2 {
+    font-size: 5.5rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .assignmentBox {
+    min-width: 96%;
+    max-width: 96%;
+  }
+
+  h1 {
+    font-size: 12rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  #right-menu {
+    float: none;
+    display: block;
+  }
+}
+
+/*animations--------------------------------------------*/
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Starts 20px lower */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);    /* Moves back to its natural spot */
+  }
+}
